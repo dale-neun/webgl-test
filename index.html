@@ -101,12 +101,14 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-		canvas.style.width = "1080px";
-        canvas.style.height = "1920px";
+		canvas.style.width = "100vw";
+		canvas.style.height = "100vh";
+		canvas.style.display = "block";
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-		canvas.style.width = "1080px";
-        canvas.style.height = "1920px";
+		canvas.style.width = "100vw";
+		canvas.style.height = "100vh";
+		canvas.style.display = "block";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
